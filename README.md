@@ -6,6 +6,18 @@ The traffic is logger per date and per interface.
 
 An embedded webserver is also included to view graphs of the recorded data.
 
+## WARNING
+
+PLEASE NOTE: This software was written by me to help build a legal case against my old ISP - I won't go into details about that.
+
+But it was written in a short period of time to be run on a very low RAM, x86 embedded Linux router running Ubuntu.
+
+I usually like to value the security provisions taken in my code, but I have very little experiance of C++ and can almost guarantee there are lots of securit
+y flaws with this code.
+
+It didn't bother me as I was using it on a home network locked down to my IP - But please, DON'T use this on a production system unless you can verify there
+is no exploitable code.
+
 ## Features
 
   * Traffic Bandwidth Totals Logging
