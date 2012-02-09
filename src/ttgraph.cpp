@@ -114,6 +114,10 @@ string do_ttgraph(int month, int year, string iface){
 						totin = totin + get_indiff(iface);
 						sent[tk] = sent[tk] + get_outdiff(iface);
 						totout = totout + get_outdiff(iface);
+                        if (rcvd[tk] > max)
+    				        max = rcvd[tk];
+				        if (sent[tk] > max)
+					        max = sent[tk];
 					}
 				}
 			}
