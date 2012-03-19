@@ -35,7 +35,7 @@ Then cd into the src folder, make && make install
 
 Run the program with the ttraffd command.
 
-Visit it at http://<serverip>:8888/
+Visit it at http://serverip:8888/
 
 View traffic graphs - That's about all there is to it.
 
