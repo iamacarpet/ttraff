@@ -27,15 +27,17 @@ is no exploitable code.
 
 ## Installation
 
-Installating and build details will be posted here when I figure out how I did it again.. This could take some time!
-    
-## Usage
+On Ubuntu 10.04, make sure you install: apt-get install libsqlite3-dev libmicrohttpd-dev
 
-I'll add some details about usage here shortly.
+Then cd into the src folder, make && make install
 
-## Documentation
+## Documentation & Usage
 
-Documentation is in the making. 
+Run the program with the ttraffd command.
+
+Visit it at http://<serverip>:8888/
+
+View traffic graphs - That's about all there is to it.
 
 ## Open Source Projects Used
 
