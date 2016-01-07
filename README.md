@@ -9,10 +9,14 @@ An embedded webserver is also included to view graphs of the recorded data.
 ## WARNING
 
 PLEASE NOTE:
+
 This software was written by me to help build a legal case against my old ISP - adapted from code inside DD-WRT.
+
 It was written in a short period of time to be run on a very low RAM, x86 embedded Linux router running Ubuntu, without much care taken for making things easy for other people to use, or much testing.
 
-I have very little experiance of C++, so I can't say the code is very secure. Please use at your own risk and NOT IN PRODUCTION!
+I have very little experiance of C++, so I can't say the code is very secure.
+
+Please use at your own risk and NOT IN PRODUCTION!
 
 ## Features
 
