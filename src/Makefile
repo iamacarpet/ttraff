@@ -1,7 +1,7 @@
 all: ttraffd
 
 ttraffd: main.o ttraff.o functions.o ttgraph.o httpd.o
-	g++ -lmicrohttpd -lsqlite3 main.o ttraff.o functions.o ttgraph.o httpd.o -o ttraffd
+	g++ main.o ttraff.o functions.o ttgraph.o httpd.o -o ttraffd -lmicrohttpd -lsqlite3 -lpthread
 
 main.o: main.cpp main.h
 	g++ -c main.cpp

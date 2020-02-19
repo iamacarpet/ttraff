@@ -29,7 +29,6 @@
 #include "functions.h"
 #include "ttraff.h"
 #include "httpd.h"
-#include "main.h"
 
 #define PORT 8888
 
@@ -40,6 +39,9 @@
 #define INITIAL_SQL "CREATE TABLE IF NOT EXISTS ttraff (day int NOT NULL, month int NOT NULL, year int NOT NULL, iface varchar(20) NOT NULL, in_dev BIGINT NOT NULL, out_dev BIGINT NOT NULL, PRIMARY KEY (day,month,year,iface));"
 
 using namespace std;
+
+sqlite3 *db_conn;
+pthread_mutex_t db_lock = PTHREAD_MUTEX_INITIALIZER;
 
 int main(){
 	/* Our process ID and Session ID */
